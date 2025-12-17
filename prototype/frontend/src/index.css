@@ -1,0 +1,87 @@
+:root {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light;
+  color: #2E2E2E;
+  background-color: #F4F4F4;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* EY Palette */
+  --ey-yellow: #FFE600;
+  --ey-black: #2E2E2E;
+  --ey-grey-bg: #F4F4F4;
+  --ey-white: #FFFFFF;
+  --ey-teal: #00A3AD;
+  --ey-silver: #D9D9D9;
+
+  /* Mappings */
+  --text-primary: var(--ey-black);
+  --text-secondary: #666666;
+  --bg-color: var(--ey-grey-bg);
+  --bg-secondary: #FAFAFA;
+  --card-bg: var(--ey-white);
+  --border-color: var(--ey-silver);
+
+  --primary-brand: var(--ey-yellow);
+  --success: var(--ey-teal);
+  --success-bg: #E0F2F3;
+  /* Light teal tint */
+  --warning: #FF9900;
+  /* Adjusted orange for contrast against white */
+  --warning-bg: #FFF5E5;
+  --danger: #FF0033;
+  /* Sharper red */
+  --danger-bg: #FFF0F2;
+}
+
+a {
+  font-weight: 500;
+  color: var(--ey-teal);
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #008C95;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  font-size: 100%;
+  /* Reset to standard scale */
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 12px;
+  /* Slightly rounded corners */
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  /* Reset to inherit, prevents double scaling */
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+/* Force light mode by default as per EY guidelines */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Override dark mode preference for this enterprise app */
+    color: #2E2E2E;
+    background-color: #F4F4F4;
+  }
+}

@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+sqlmodel
+langgraph
+langchain
+langchain_openai
+pydantic
+geopy
+requests
+python-multipart
+python-dotenv
